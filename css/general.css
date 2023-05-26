@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+
+/****************/
+/* Variables */
+/****************/
+
+:root {
+  /* Colors */
+  --primary-color: #e67e22;
+  --primary-color-dark: #cf711f;
+  --section-background: #fdf2e9;
+  --sonic-silver-color: #767676;
+  --dim-gray-color: #6f6f6f;
+  --davy-grey-color: #555;
+  --dark-charcoal-color: #333;
+  --white-color: #fff;
+
+  /* Font Weights */
+  --font-weight-md: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Transitions */
+  --main-transition: all 0.3s;
+}
+
+/**************************/
+/* General Presets */
+/**************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--davy-grey-color);
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*********************/
+/* Reusable Grid */
+/*********************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-color-dark);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+strong {
+  font-weight: var(--font-weight-md);
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.margin-top-md {
+  margin-top: 4.8rem;
+}
+
+.pad-top-md {
+  padding-top: 14.4rem;
+}
+
+.navigation {
+  display: none;
+}
+
+.burger-menu,
+.close {
+  display: none;
+  cursor: pointer;
+  z-index: 9999999;
+  position: absolute;
+  top: 2.4rem;
+  right: 3.7rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.disable-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
