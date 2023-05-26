@@ -17,7 +17,7 @@ Omnifood is an AI-powered food subscription that will make you eat healthy again
 
 ## Demo
 
-https://omnifood-foodapp.netlify.app/
+https://omnifooddel.netlify.app/
 
 ## 🔗 Links
 
